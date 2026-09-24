@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="noindex, nofollow" name="robots"/>
+  <meta content="课程练习：个人介绍、技能与作品门户。" name="description"/>
+  <title>
+   我的个人主页
+  </title>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <!-- CSS 负责颜色、字体、布局；defer 让 JavaScript 在 HTML 解析完成后执行。 -->
+  <link href="styles.css?v=4" rel="stylesheet"/>
+  <!-- 第 3 课只新增这一张样式表，不覆盖前两课的 styles.css。 -->
+  <link href="lesson-03-task.css?v=4" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   跳到正文
+  </a>
+  <!-- 顶部阅读进度条与光标暖光 -->
+  <div class="scroll-progress" aria-hidden="true">
+   <span></span>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a class="brand" href="#about">
+     我的主页
+    </a>
+    <!-- href="#栏目ID" 是原生锚点：即使不加载 JavaScript，也能跳到对应栏目。 -->
+    <nav aria-label="主导航">
+     <a href="#about">
+      关于
+     </a>
+     <a href="#experience">
+      竞赛
+     </a>
+     <a href="#projects">
+      项目
+     </a>
+     <a href="#skills">
+      技能
+     </a>
+     <a href="#portfolio">
+      作品
+     </a>
+     <a href="#teaching">
+      目标
+     </a>
+     <a href="#publications">
+      记录
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main">
+   <!-- HTML 练习：修改姓名、研究方向、照片路径和联系方式。 -->
+   <section class="hero" id="about">
+    <div class="container">
+     <div class="hero-top">
+      <div class="hero-copy">
+       <h1>
+        庄同学
+        <span>
+         Zhuang
+        </span>
+       </h1>
+       <p class="hero-role">
+        人工智能技术专业学生 · 大模型开发学习者
+       </p>
+       <p class="hero-school">
+        广东科学技术职业学院 · 25大模型应用产业学院班
+       </p>
+      </div>
+      <div class="hero-visual">
+       <figure>
+        <img alt="个人头像" height="220" src="assets/avatar.png" width="220"/>
+       </figure>
+      </div>
+     </div>
+     <div class="research-direction" id="research-direction">
+      <span class="eyebrow">
+       学习方向
+      </span>
+      <p>
+       HTML5、CSS3、JavaScript，正在学习 Git、数据库与网站部署。
+      </p>
+     </div>
+     <div class="profile-details">
+      <div>
+       <span>
+        学习阶段
+       </span>
+       <p>
+        在校学习
+       </p>
+      </div>
+      <div>
+       <span>
+        所在城市
+       </span>
+       <p>
+        珠海
+       </p>
+      </div>
+      <div>
+       <span>
+        联系
+       </span>
+       <p>
+        18707149721
+       </p>
+      </div>
+      <div>
+       <span>
+        学校地址
+       </span>
+       <p>
+        广东省珠海市金湾区广东科学技术职业学院
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- 每个栏目复用 section → container → 标题/内容 的结构，统一由 CSS 控制样式。 -->
+   <section class="section" id="experience">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       竞赛经历
+      </h2>
+     </header>
+     <div class="section-content">
+      <!-- TASK-HTML：复制 experience-item 可增加一条自己的经历。 -->
+      <div class="experience-item">
+       <p class="experience-heading">
+        <strong>
+         泰迪杯数据挖掘
+        </strong>
+        <span class="award">
+         国家二等奖
+        </span>
+       </p>
+      </div>
+      <div class="experience-item">
+       <p class="experience-heading">
+        <strong>
+         全国大学生数学建模竞赛
+        </strong>
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="projects">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       项目经历
+      </h2>
+     </header>
+     <div class="section-content">
+      <article class="research-item">
+       <h3>
+        <time>
+         课程练习
+        </time>
+        个人主页
+       </h3>
+       <p>
+        制作自己的网页，展示资料与作品，记录修改、测试与发布过程。
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="skills">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       技能与实践
+      </h2>
+     </header>
+     <div class="section-content">
+      <ul class="skills-list">
+       <li>
+        <strong>
+         网页内容
+        </strong>
+        HTML5 结构、图片、链接。
+       </li>
+       <li>
+        <strong>
+         页面样式
+        </strong>
+        CSS3 字体、颜色、响应式布局。
+       </li>
+       <li>
+        <strong>
+         开发过程
+        </strong>
+        JavaScript、Git、检查与部署。
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="portfolio">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       作品门户
+      </h2>
+     </header>
+     <ol class="portfolio-list">
+      <li class="work-card work-blog">
+       <a href="https://ffd-p2-blog.netlify.app/" rel="noopener noreferrer" target="_blank">
+        <div class="work-cover">
+         <img alt="长风成卷 · 博客应用的实际网页截图" decoding="async" height="800" src="assets/work-blog.png" width="1200"/>
+        </div>
+        <div class="work-copy">
+         <h3>
+          长风成卷 · 博客应用
+         </h3>
+         <p>
+          文章展示、接口与数据库。
+         </p>
+        </div>
+       </a>
+      </li>
+      <li class="work-card work-community">
+       <a href="https://ffd-p3-community.netlify.app/" rel="noopener noreferrer" target="_blank">
+        <div class="work-cover">
+         <img alt="群像云图 · 社区应用的实际网页截图" decoding="async" height="800" src="assets/work-community.png" width="1200"/>
+        </div>
+        <div class="work-copy">
+         <h3>
+          群像云图 · 社区应用
+         </h3>
+         <p>
+          内容发布与社区互动。
+         </p>
+        </div>
+       </a>
+      </li>
+     </ol>
+    </div>
+   </section>
+   <section class="section" id="teaching">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       本学期目标
+      </h2>
+     </header>
+     <div class="section-content">
+      <div class="teaching-group">
+       <ol>
+        <li>
+         每次课完成一个可运行的小改动。
+        </li>
+        <li>
+         能解释自己修改的 HTML、CSS 和 JavaScript。
+        </li>
+        <li>
+         使用 Git 记录版本，让作品能被别人访问。
+        </li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="publications">
+    <div class="container">
+     <header class="section-heading">
+      <h2>
+       学习记录
+      </h2>
+     </header>
+     <div class="section-content">
+      <div class="publication-group">
+       <ol class="references">
+        <li>
+         完成第一张个人主页。
+        </li>
+        <li>
+         后续在这里补充自己的真实成果。
+        </li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container footer-inner">
+    <a href="#about">
+     回到顶部
+    </a>
+    <a href="#portfolio">
+     作品门户
+    </a>
+   </div>
+  </footer>
+  <script>
+   // 动态效果：滚动渐入、进度条、导航高亮、光标暖光。
+   // 全部是渐进增强：即使这段脚本不执行，页面内容也完整可见。
+   document.documentElement.classList.add("js");
+
+   // 1) 顶部阅读进度条
+   var bar = document.querySelector(".scroll-progress span");
+   function onScroll() {
+     var max = document.documentElement.scrollHeight - window.innerHeight;
+     var p = max > 0 ? window.scrollY / max : 0;
+     bar.style.transform = "scaleX(" + p + ")";
+   }
+   window.addEventListener("scroll", onScroll, { passive: true });
+   onScroll();
+
+   // 2) 各栏目滚动渐入
+   var targets = document.querySelectorAll(
+     ".section-heading, .section-content, .portfolio-list > li, .profile-details > div, .research-direction"
+   );
+   targets.forEach(function (el) { el.classList.add("reveal"); });
+   var io = new IntersectionObserver(function (entries) {
+     entries.forEach(function (e) {
+       if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+     });
+   }, { threshold: 0.15 });
+   targets.forEach(function (el) { io.observe(el); });
+
+   // 3) 导航：当前栏目高亮
+   var links = document.querySelectorAll("nav a");
+   var sections = [];
+   links.forEach(function (a) {
+     var s = document.querySelector(a.getAttribute("href"));
+     if (s) sections.push({ a: a, s: s });
+   });
+   var navIo = new IntersectionObserver(function (entries) {
+     entries.forEach(function (e) {
+       if (!e.isIntersecting) return;
+       sections.forEach(function (item) {
+         item.a.classList.toggle("active", item.s === e.target);
+       });
+     });
+   }, { rootMargin: "-40% 0px -55% 0px" });
+   sections.forEach(function (item) { navIo.observe(item.s); });
+
+   // 4) 光标暖光（仅桌面；触屏设备不启用）
+   if (window.matchMedia("(pointer: fine)").matches) {
+     var glow = document.querySelector(".cursor-glow");
+     var gx = 0, gy = 0, tx = 0, ty = 0, raf = null;
+     document.addEventListener("mousemove", function (e) {
+       tx = e.clientX; ty = e.clientY;
+       document.body.classList.add("glow-on");
+       if (!raf) tick();
+     });
+     function tick() {
+       gx += (tx - gx) * 0.08; gy += (ty - gy) * 0.08;
+       glow.style.transform = "translate(" + gx + "px," + gy + "px)";
+       raf = (Math.abs(tx - gx) > 0.5 || Math.abs(ty - gy) > 0.5) ? requestAnimationFrame(tick) : null;
+     }
+   }
+  </script>
+ </body>
+</html>
+
+<!-- 本课任务详见课堂任务.md。 -->
