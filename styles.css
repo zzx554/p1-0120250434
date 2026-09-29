@@ -206,6 +206,29 @@ a { color: var(--gold); }
 .skills-list strong { min-width: 5.5em; font-weight: 600; color: var(--gold); letter-spacing: 2px; }
 .skills-list strong::before { content: "◆ "; font-size: 10px; color: var(--gold-dim); }
 
+/* 家乡栏目：介绍段落 + 特色卡片 */
+.hometown-intro { margin: 0 0 20px; font-size: 15px; line-height: 1.9; color: var(--ink); }
+.hometown-cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px; margin: 0;
+}
+.hometown-card {
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(12, 18, 16, 0.45);
+  backdrop-filter: blur(12px);
+  transition: border-color 250ms ease, transform 250ms ease;
+}
+.hometown-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+.hometown-label {
+  display: inline-block; margin-bottom: 8px;
+  font-size: 12px; letter-spacing: 3px; color: var(--gold);
+  padding: 1px 10px; border: 1px solid var(--gold-dim); border-radius: 999px;
+  background: rgba(201,169,106,0.06);
+}
+.hometown-card p { margin: 0; font-size: 14px; line-height: 1.7; color: var(--muted); }
+
 /* 有序列表栏目 */
 .teaching-group ol, .publication-group ol { margin: 0; padding-left: 24px; }
 .teaching-group li, .publication-group li { margin: 8px 0; color: var(--ink); }
